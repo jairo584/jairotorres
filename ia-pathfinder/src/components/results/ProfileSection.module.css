@@ -1,0 +1,21 @@
+/* ia-pathfinder/src/components/results/ProfileSection.module.css */
+.profileSection {
+  background-color: #f0f8ff; /* AliceBlue for a light, distinct background */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profileText {
+  font-size: 1.2rem;
+  color: #007bff; /* Primary color for emphasis */
+  font-weight: 500;
+}

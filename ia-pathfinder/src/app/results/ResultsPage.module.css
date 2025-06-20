@@ -1,0 +1,135 @@
+/* ia-pathfinder/src/app/results/ResultsPage.module.css */
+.resultsContainer {
+  max-width: 900px;
+  margin: 0 auto; /* Centered by main's flex, but good for block context */
+  padding: 2rem 1rem; /* Padding for smaller screens */
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #007bff; /* Primary color accent */
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto; /* Center paragraph if it's narrower than header */
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.printButton {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.printButton:hover {
+  background-color: #0056b3;
+}
+
+.actionButton {
+  background-color: #6c757d; /* Secondary/gray color */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 1rem; /* Space from print button if on same line */
+}
+
+.actionButton:hover {
+  background-color: #545b62;
+}
+
+.noResults {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fff3cd; /* Light yellow warning background */
+  border: 1px solid #ffeeba; /* Yellow warning border */
+  border-radius: 8px;
+  color: #856404; /* Dark yellow/brown text for warning */
+}
+
+.noResults h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.noResults p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Ensure actionButton in noResults is styled correctly */
+.noResults .actionButton {
+  background-color: #007bff; /* Primary color for the button in this context */
+  margin-left: 0; /* Reset margin if it's the only button */
+}
+
+.noResults .actionButton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .actionButton {
+    margin-left: 0;
+    margin-top: 0.5rem; /* Stack buttons on small screens */
+  }
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
+  .resultsContainer {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+@media print {
+  .printButton {
+    display: none;
+  }
+  .profileSection, .toolsSection, .planSection, .toolCard {
+    box-shadow: none;
+    border: 1px solid #ccc; /* Simpler borders for print */
+  }
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+  .resultsContainer {
+    max-width: 100%;
+    padding: 0;
+  }
+}

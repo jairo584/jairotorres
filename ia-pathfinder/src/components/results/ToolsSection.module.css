@@ -1,0 +1,52 @@
+/* ia-pathfinder/src/components/results/ToolsSection.module.css */
+.toolsSection {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.toolCard {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.toolCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.toolName {
+  font-size: 1.4rem;
+  color: #007bff;
+  margin-bottom: 0.75rem;
+}
+
+.toolPurpose,
+.toolBenefit {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.toolPurpose strong,
+.toolBenefit strong {
+  color: #333;
+  font-weight: 600;
+}

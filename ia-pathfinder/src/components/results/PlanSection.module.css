@@ -1,0 +1,40 @@
+/* ia-pathfinder/src/components/results/PlanSection.module.css */
+.planSection {
+  background-color: #e6fffa; /* Light cyan/mint for a fresh look */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.planList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.planStep {
+  background-color: #ffffff;
+  border: 1px solid #b2f5ea; /* Border matching the background theme */
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+.stepNumber {
+  font-weight: 600;
+  color: #00796b; /* Teal color for step numbers */
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}

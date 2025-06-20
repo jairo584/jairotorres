@@ -1,0 +1,19 @@
+/* ia-pathfinder/src/app/quiz/QuizPage.module.css */
+.quizPageContainer {
+  text-align: center; /* Center the text content like h1 and p */
+  width: 100%; /* Ensure it takes up available width for centering by parent flex */
+  max-width: 800px; /* Optional: constrain the width of the intro text */
+  margin-bottom: 2rem; /* Space before the WizardForm */
+}
+
+.quizPageContainer h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem; /* Example size */
+  color: #333;
+}
+
+.quizPageContainer p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem; /* Example size */
+  color: #555;
+}

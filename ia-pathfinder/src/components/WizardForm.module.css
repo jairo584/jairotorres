@@ -1,0 +1,72 @@
+/* ia-pathfinder/src/components/WizardForm.module.css */
+.wizardFormContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.stepIndicator {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.questionArea {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px dashed #f0f0f0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.navButton, .submitButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.navButton:hover {
+  background-color: #0056b3;
+}
+
+.navButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.submitButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #1e7e34;
+}
+
+.loadingText {
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #007bff;
+}

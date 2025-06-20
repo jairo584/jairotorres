@@ -1,0 +1,2 @@
+# This ensures the directory ia-pathfinder/src/app/quiz exists
+# before trying to move a file into it.
